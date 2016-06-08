@@ -1,0 +1,22 @@
+﻿<html>
+<head>
+    <title>Chirp</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+</head>
+<body ng-app="chirp">
+    <div id="main" class="container" ng-controller="authController">
+        <form class="form-auth" ng-submit="login()">
+            <h2>Login</h2>
+            <p class="text-warning">{{error_message}}</p>
+            <input type="username" ng-model="user.username" placeholder="Username" class="form-control"><br>
+            <input type="password" ng-model="user.password" placeholder="Password" class="form-control"><br>
+            <input type="submit" value="Login" class="btn btn-primary" />
+        </form>
+    </div>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="JS/chirp.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+</body>
+</html>
